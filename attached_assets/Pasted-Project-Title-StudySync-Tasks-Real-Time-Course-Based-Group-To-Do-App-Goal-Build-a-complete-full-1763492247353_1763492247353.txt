@@ -1,0 +1,135 @@
+Project Title: StudySync Tasks — Real-Time Course-Based Group To-Do App
+
+Goal: Build a complete full-stack web application where university students can create shared, course-specific task lists with real-time synchronization, authentication, and a modern responsive UI.
+
+🧱 Tech Stack (Required)
+
+Frontend: React (Hooks + functional components)
+
+Backend/Cloud: Firebase Firestore (real-time database)
+
+Authentication: Firebase Auth (Email + Password)
+
+Hosting: Firebase Hosting
+
+📌 Core Features to Implement
+1. User Authentication
+
+User registration + login
+
+Fields: email, password, display name
+
+Email verification must be implemented
+
+Bonus (if possible): “Forgot Password” reset email
+
+After login → redirect to dashboard
+
+2. Course-Based Task Management (CRUD)
+
+Users can create and interact with tasks inside specific course groups.
+
+Task fields:
+
+Title (required)
+
+Description (optional)
+
+Due Date (optional)
+
+Priority (Low / Medium / High)
+
+Assigned To (self or course group member)
+
+Status (completed / pending)
+
+Required operations:
+
+Create task
+
+Edit task
+
+Mark complete/incomplete
+
+Delete task
+
+View task list with:
+
+Filtering (status, assignee, priority)
+
+Sorting (due date, priority)
+
+3. Real-Time Cloud Synchronization (Critical Feature)
+
+Use Firebase Firestore onSnapshot listeners
+
+Any update made by one student must instantly update for all group members without page refresh
+
+Data structure should follow:
+
+Users -> Courses -> Tasks
+
+4. Frontend UI Requirements
+
+Create a clean, modern SPA with the following pages:
+
+Login / Register page
+
+Dashboard: shows overview of tasks across all courses
+
+Course Page: displays only tasks related to that specific course
+
+Task creation/edit forms
+
+Clear distinction between completed and pending tasks
+
+Fully responsive (mobile + desktop)
+
+Styling can use:
+
+Tailwind CSS OR basic CSS modules
+
+🎁 Bonus Features (If possible)
+
+Include any of these if time allows:
+
+Push notifications for assigned tasks or approaching deadlines
+
+File attachments (stored in Firebase Storage)
+
+Comments/discussion thread inside each task
+
+Data visualization (charts showing completed tasks per course)
+
+Drag-and-drop task ordering
+
+Offline capability via service workers
+
+📦 Project Output Expectations
+
+Replit should generate:
+
+A fully functional React + Firebase app following best practices (components, hooks, context, etc.)
+
+A modular file structure such as:
+
+src/
+  components/
+  pages/
+  hooks/
+  context/
+  firebase/
+  utils/
+
+
+Fully working CRUD and real-time sync
+
+README with setup instructions
+
+Firebase config template
+
+Deployment instructions for Firebase Hosting
+
+🚀 Final Instruction
+
+Build the entire application following the specs above with clean, commented code and a professional UI.
